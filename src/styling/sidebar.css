@@ -1,0 +1,67 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding around the content */
+  border-right: 1px solid #333; /* Right border with dark color */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+}
+
+/* Sidebar Heading Styles */
+.sidebar-heading {
+  font-size: 20px; /* Medium font size for sidebar heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+/* Sidebar Menu Styles */
+.sidebar-menu {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Sidebar Menu Item Styles */
+.sidebar-menu-item {
+  margin-bottom: 10px; /* Spacing between menu items */
+  color: #fff; /* White text color */
+  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  border-radius: 10px; /* Rounded corners for menu items */
+}
+
+/* Active Menu Link Styles */
+.active-menu-link {
+  background: linear-gradient(
+    #202f4b,
+    #3b5572
+  ); /* Gradient background for active menu link */
+}
+
+/* Hover Effect on Sidebar Menu Items */
+.sidebar-menu-item:hover {
+  background: linear-gradient(
+    #202f4b,
+    #3b5572
+  ); /* Gradient background on hover */
+}
+
+/* Sidebar Menu Link Styles */
+.sidebar-menu-link {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align vertically */
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding around the link */
+  border-radius: 10px; /* Rounded corners for links */
+}
+
+/* Sidebar Menu Icon Styles */
+.sidebar-menu-icon {
+  margin-right: 10px; /* Spacing to the right of the icon */
+}
+
+/* Sidebar Menu Text Styles */
+.sidebar-menu-text {
+  font-size: 16px; /* Small font size for menu text */
+}

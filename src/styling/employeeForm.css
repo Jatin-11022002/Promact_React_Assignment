@@ -1,0 +1,85 @@
+/* Global Box Sizing */
+* {
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Form Container Styles */
+.form-container {
+  width: 100%; /* Full width */
+  height: 90%; /* 90% of the available height */
+  max-width: 90%; /* Maximum width of 90% */
+  max-height: 100%; /* Maximum height of 100% */
+  margin: auto; /* Center horizontally */
+  padding: 20px; /* Padding around the container */
+  color: #333; /* Text color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  gap: 10px; /* Spacing between child elements */
+}
+
+/* Form Styles */
+.form-container .form {
+  width: 90%; /* 90% width of the form container */
+  overflow: auto; /* Enable scrolling for overflow content */
+  padding: 10px; /* Padding within the form */
+}
+
+/* Form Heading Styles */
+.form-heading {
+  margin-bottom: 20px; /* Spacing below the heading */
+  font-size: 24px; /* Larger font size for emphasis */
+  text-align: center; /* Center-align the heading */
+  color: #fff; /* White text color */
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 20px; /* Spacing between form groups */
+}
+
+/* Form Label Styles */
+.form-label {
+  display: block; /* Display as block element */
+  font-size: 16px; /* Font size for labels */
+  margin-bottom: 5px; /* Spacing below labels */
+  color: #fff; /* White text color */
+}
+
+/* Form Input Styles */
+.form-input {
+  width: 100%; /* Full width input */
+  padding: 10px; /* Padding inside the input */
+  font-size: 16px; /* Font size for input text */
+  border: 1px solid #ccc; /* Border with light gray color */
+  border-radius: 4px; /* Rounded corners for input */
+}
+
+/* Form Submit Button Styles */
+.form-submit {
+  width: 100%; /* Full width button */
+  padding: 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size for button text */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Cursor style on hover */
+  background: linear-gradient(#202f4b, #3b5572); /* Gradient background */
+  box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.363); /* Box shadow for depth */
+}
+
+/* Form Submit Button Hover Styles */
+.form-submit:hover {
+  background: linear-gradient(#1a263d, #2a3d52); /* Darker gradient on hover */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px; /* Reduced padding for smaller screens */
+    max-width: 90%; /* Maximum width of 90% for smaller screens */
+  }
+}

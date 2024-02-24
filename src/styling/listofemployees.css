@@ -1,0 +1,133 @@
+/* Global Box Sizing */
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Records Container Styles */
+.records-container {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  max-width: 90%; /* Maximum width of 90% */
+  margin: auto; /* Center horizontally */
+  padding: 20px; /* Padding around the container */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Page Heading Styles */
+.page-heading {
+  font-size: 24px; /* Large font size for heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+  text-align: center; /* Centering text content */
+  color: #fff; /* White text color */
+}
+
+.table-placeholder {
+  font-size: 30px; /* Large font size for placeholder */
+  display: flex; /* Setting up display flex */
+  justify-content: center; /* Centering content horizontically */
+  align-items: center; /* Centering content vertically */
+  height: 100%;
+}
+
+/* Table Wrapper Styles */
+.table-wrapper {
+  overflow: auto; /* Enable scrolling for overflow content */
+  max-height: 90%; /* Maximum height of 90% */
+  padding-right: 4px; /* Add padding to prevent overlap with scrollbar */
+}
+
+/* Sticky Table Header */
+table thead tr {
+  position: sticky; /* Make the table header sticky */
+  top: 0; /* Stick to the top of the container */
+}
+
+/* Records Table Styles */
+.records-table {
+  width: 100%; /* Full width */
+  border-collapse: separate; /* Separate borders for cells */
+  border-radius: 10px; /* Rounded corners */
+  overflow: auto; /* Enable scrolling for overflow content */
+}
+
+/* Table Header Cell Styles */
+.records-table th {
+  padding: 10px; /* Padding inside header cells */
+  border: 1px solid #ddd; /* Border with light gray color */
+  background: linear-gradient(
+    #202f4b,
+    #3b5572
+  ); /* Gradient background for header */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Table Data Cell Styles */
+.records-table td {
+  padding: 10px; /* Padding inside data cells */
+  border: 1px solid #ddd; /* Border with light gray color */
+  text-align: center; /* Center-align text */
+  color: #fff; /* White text color */
+}
+
+/* Actions Cell Styles */
+.actions-cell {
+  display: flex; /* Use flexbox for layout */
+  gap: 10px; /* Spacing between child elements */
+  justify-content: space-around; /* Evenly distribute space */
+  align-items: center; /* Center align vertically */
+}
+
+/* Action Icon Styles */
+.action-icon {
+  padding: 8px 16px; /* Padding around icon */
+  background: transparent; /* Transparent background */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Hover Effect on Action Icons */
+.action-icon:hover {
+  background: linear-gradient(
+    #202f4b,
+    #3b5572
+  ); /* Gradient background on hover */
+}
+
+/* Scrollbar Styles */
+.table-wrapper::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Scrollbar Thumb Styles */
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    #202f4b,
+    #3b5572
+  ); /* Gradient background for scrollbar thumb */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Scrollbar Track Styles */
+.table-wrapper::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background for scrollbar track */
+}
+
+/* Hover Effect on Scrollbar Thumb */
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#21304b, #2a3d52); /* Change color on hover */
+}
+
+/* Increase Width of Scrollbar Track on Hover */
+.table-wrapper:hover::-webkit-scrollbar {
+  width: 10px; /* Increase width */
+}
+
+/* Transition Effect for Scrollbar Width Change */
+.table-wrapper::-webkit-scrollbar {
+  transition: width 0.3s; /* Smooth transition for width change */
+}
