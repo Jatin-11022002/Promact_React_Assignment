@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addEmployee, updateEmployee } from "../store/employeeSlice";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
 import "../styling/employeeForm.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,6 +13,9 @@ const EmployeeForm = () => {
   const [birthdate, setBirthdate] = useState("");
   const [department, setDepartment] = useState("");
   const [experience, setExperience] = useState("");
+
+  // Hook for navigating between pages
+  const navigate = useNavigate();
 
   // Extracting employee ID from URL params
   const { id: employeeId } = useParams();
@@ -103,8 +106,9 @@ const EmployeeForm = () => {
           experience,
         })
       );
-      // Display success toast after updating an existing record
-      toast.success("Record Updated Successfully");
+
+      // Navigating to List Page after updating record
+      navigate("/list", { state: { updated: true } });
     }
   };
 

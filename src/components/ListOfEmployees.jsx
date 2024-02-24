@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams, useLocation } from "react-router-dom";
 import "../styling/listofemployees.css";
 import { deleteEmployee } from "../store/employeeSlice";
 import { ToastContainer, toast } from "react-toastify";
@@ -10,6 +10,16 @@ const ListOfEmployees = () => {
   // Accessing Redux store to retrieve employee records
   let records = useSelector((state) => state.records);
   const dispatch = useDispatch();
+
+  const location = useLocation(); // Get the current location
+
+  useEffect(() => {
+    // Check if the redirected page was visited after an update
+    if (location.state && location.state.updated) {
+      // Show toast notification only if redirected with state indicating update
+      toast.success("Record updated successfully!");
+    }
+  }, [location.state]); // Re-run effect when location state changes
 
   return (
     <div className="records-container">
@@ -78,7 +88,9 @@ const ListOfEmployees = () => {
         </>
       ) : (
         // Display message when no records are available
-        <h1 className="page-heading table-placeholder">No Records to Display</h1>
+        <h1 className="page-heading table-placeholder">
+          No Records to Display
+        </h1>
       )}
     </div>
   );
