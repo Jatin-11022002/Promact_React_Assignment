@@ -1,8 +1,26 @@
-# React + Vite
+# Setup Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Add Files in your Local by using below command:
+  
+  ```
+   git clone https://github.com/Jatin-11022002/Promact_React_Assignment.git
+  ```
+* Now a folder named as **Promact_React_Assignment** will be created. Now open terminal and write below command for getting into root folder:
 
-Currently, two official plugins are available:
+  ```
+   cd Promact_React_Assignment
+  ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Now run below command for installing dependencies required by Application
+
+  ```
+    npm install
+  ```
+
+* Now run below command for starting the server
+
+  ```
+    npm run dev
+  ```
+
+* A URL will be now visible on console, navigate to the browser and open the url. Now you will be able to use the applicaiton.
